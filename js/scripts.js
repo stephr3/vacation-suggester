@@ -92,6 +92,7 @@ $(document).ready(function(){
     $(".jumbotron").hide();
     $("#quiz").hide();
     $("#results").show();
+    $("html,body").animate({ scrollTop: 0 }, 0);
   });
 
   //Results button functionality
@@ -100,5 +101,6 @@ $(document).ready(function(){
     $("#results").hide();
     $("#quiz").show();
     $(".jumbotron").show();
+    $("html,body").animate({ scrollTop: 0 }, 0);
   });
 });
