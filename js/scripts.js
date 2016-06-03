@@ -89,7 +89,7 @@ $(document).ready(function(){
       $("#seattle, #staycation").hide();
       $("#sanFrancisco").show();
     }
-
+    $("#headerPicture").hide();
     $("#quiz").hide();
     $("#results").show();
   });
@@ -97,8 +97,8 @@ $(document).ready(function(){
   //Results button functionality
   $("#results button").click(function(event){
     event.preventDefault();
-    $("#quiz").removeAttr("checked");
     $("#results").hide();
     $("#quiz").show();
+    $("#headerPicture").show();
   });
 });

@@ -1,6 +1,6 @@
 # Vacation Suggester
 #### _An interactive quiz for Portlanders_
-#### _By Stephanie Gurung_
+### _By Stephanie Gurung_
 
 ## Description
 _This is a fun interactive quiz which will help Portlanders decide where to go on their next vacation. The page will take user input, calculate a result, and display the result for the user._
