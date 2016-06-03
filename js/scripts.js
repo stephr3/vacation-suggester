@@ -14,6 +14,7 @@ var calcResult = function (tally1, tally2, tally3){
 
 // User-interface logic
 $(document).ready(function(){
+  //Submit button functionality
   $("#quiz").submit(function(event){
     event.preventDefault();
     // Set variables
@@ -77,18 +78,28 @@ $(document).ready(function(){
 
     if (result === "tally1"){
       $(".destinationName").text("have a staycation in Portland");
+      $("#seattle, #sanFrancisco").hide();
       $("#staycation").show();
     } else if (result === "tally2") {
       $(".destinationName").text("Seattle");
+      $("#staycation, #sanFrancisco").hide();
       $("#seattle").show();
     } else {
       $(".destinationName").text("San Francisco");
+      $("#seattle, #staycation").hide();
       $("#sanFrancisco").show();
     }
-    
+
     $("#quiz").hide();
     $("#results").show();
 
     alert(["staycation: " + staycation, "seattle: " + seattle, "sanFrancisco: " + sanFrancisco, "q1:" + question1, "q2:"+question2, "q3:"+question3, "q4:"+question4, "q5:" +question5, "q6:"+question6]); //for debugging
+  });
+
+  //Results button functionalit
+  $("#results button").click(function(event){
+    event.preventDefault();
+    $("#results").hide();
+    $("#quiz").show();
   });
 });
