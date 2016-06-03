@@ -1,3 +1,20 @@
+.jumbotron {
+  height: 60vh;
+  background-image: url(../img/vacation-dog.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #00C3FF;
+  }
+
+.container {
+  max-width: 85vw;
+}
+.lead {
+  font-style: italic;
+  margin: 3vh auto 4vh auto;
+}
+
 #results {
   display: none;
 }
