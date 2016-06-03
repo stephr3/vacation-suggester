@@ -15,60 +15,62 @@
         I know you're getting bored in Portland, going to work every day, taking care of your home. Wouldn't you like to escape for a while? Take this quiz to figure out where you should go on vacation this month! Answer the questions below to find out your next destination...
       </p>
       <div id="quiz">
-        <div class="form-group">
-          <label for="question1">Would you prefer to take a car or fly to your destination?</label>
-          <select class="form-control" id="question1">
-            <option>No Preference</option>
-            <option value="car">I'd prefer to take a car.</option>
-            <option value="fly">I'd prefer to fly somewhere.</option>
-          </select>
-        </div>
+        <form>
+          <div class="form-group">
+            <label for="question1">Would you prefer to take a car or fly to your destination?</label>
+            <select class="form-control" id="question1">
+              <option>No Preference</option>
+              <option value="car">I'd prefer to take a car.</option>
+              <option value="fly">I'd prefer to fly somewhere.</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="question2">What's your trip budget like?</label>
-          <select class="form-control" id="question2">
-            <option>No Preference</option>
-            <option value="budget">I have a pretty small budget for this trip.</option>
-            <option value="money">I've got money to spend!</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="question2">What's your trip budget like?</label>
+            <select class="form-control" id="question2">
+              <option>No Preference</option>
+              <option value="budget">I have a pretty small budget for this trip.</option>
+              <option value="money">I've got money to spend!</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="question3">Where do you want to sleep at night?</label>
-          <select class="form-control" id="question3">
-            <option>No Preference</option>
-            <option value="ownBed">I will miss my own bed too much if I travel!</option>
-            <option value="hotel">I'd love to stay at a nice hotel.</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="question3">Where do you want to sleep at night?</label>
+            <select class="form-control" id="question3">
+              <option>No Preference</option>
+              <option value="ownBed">I will miss my own bed too much if I travel!</option>
+              <option value="hotel">I'd love to stay at a nice hotel.</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="question4">Do you like rivers or the sea?</label>
-          <select class="form-control" id="question4">
-            <option>No Preference</option>
-            <option value="river">I love rivers!</option>
-            <option value="sea">I want to be near the sea.</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="question4">Do you like rivers or the sea?</label>
+            <select class="form-control" id="question4">
+              <option>No Preference</option>
+              <option value="river">I love rivers!</option>
+              <option value="sea">I want to be near the sea.</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="question5">Would you like to go up high for a view, or check out neat bridges?</label>
-          <select class="form-control" id="question5">
-            <option>No Preference</option>
-            <option value="spaceNeedle">I want to see a view!</option>
-            <option value="bridges">I want to check out some bridges!</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="question5">Would you like to go up high for a view, or check out neat bridges?</label>
+            <select class="form-control" id="question5">
+              <option>No Preference</option>
+              <option value="spaceNeedle">I want to see a view!</option>
+              <option value="bridges">I want to check out some bridges!</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="question6">Do you like Starbucks, or do you prefer different coffee?</label>
-          <select class="form-control" id="question6">
-            <option>No Preference</option>
-            <option value="starbucks">I've gotta have Starbucks!</option>
-            <option value="otherCoffee">I think I'd like to try a different type of coffee.</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Find your destination</button>
+          <div class="form-group">
+            <label for="question6">Do you like Starbucks, or do you prefer different coffee?</label>
+            <select class="form-control" id="question6">
+              <option>No Preference</option>
+              <option value="starbucks">I've gotta have Starbucks!</option>
+              <option value="otherCoffee">I think I'd like to try a different type of coffee.</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Find your destination</button>
+        </form>
       </div>
       <div id="results">
         <h1>Congratulations, you're going to <span class="destinationName"></span></h1>
