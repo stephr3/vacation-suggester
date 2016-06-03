@@ -75,6 +75,15 @@ $(document).ready(function(){
     //Calculate result
     calcResult(staycation, seattle, sanFrancisco);
 
+    if (result === "tally1"){
+      alert("You should have a staycation in Portland!");
+    } else if (result === "tally2") {
+      alert("You should visit Seattle!");
+    } else {
+      alert("You should visit San Francisco!");
+    }
+
+
     alert(["staycation: " + staycation, "seattle: " + seattle, "sanFrancisco: " + sanFrancisco, "q1:" + question1, "q2:"+question2, "q3:"+question3, "q4:"+question4, "q5:" +question5, "q6:"+question6]); //for debugging
   });
 });
