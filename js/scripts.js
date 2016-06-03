@@ -77,12 +77,17 @@ $(document).ready(function(){
 
     if (result === "tally1"){
       $(".destinationName").text("have a staycation in Portland");
+      $("#staycation").show();
     } else if (result === "tally2") {
       $(".destinationName").text("Seattle");
+      $("#seattle").show();
     } else {
       $(".destinationName").text("San Francisco");
+      $("#sanFrancisco").show();
     }
-
+    
+    $("#quiz").hide();
+    $("#results").show();
 
     alert(["staycation: " + staycation, "seattle: " + seattle, "sanFrancisco: " + sanFrancisco, "q1:" + question1, "q2:"+question2, "q3:"+question3, "q4:"+question4, "q5:" +question5, "q6:"+question6]); //for debugging
   });
