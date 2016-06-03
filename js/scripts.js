@@ -99,6 +99,7 @@ $(document).ready(function(){
   //Results button functionalit
   $("#results button").click(function(event){
     event.preventDefault();
+    $("#quiz").removeAttr("checked");
     $("#results").hide();
     $("#quiz").show();
   });
