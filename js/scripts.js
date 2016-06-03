@@ -92,7 +92,7 @@ $(document).ready(function(){
     }
     $(".jumbotron").hide();
     $("#quiz").hide();
-    $("#results").show();
+    $("#results").fadeIn("slow");
     $("html,body").animate({ scrollTop: 0 }, 0);
   });
 
@@ -101,7 +101,7 @@ $(document).ready(function(){
     event.preventDefault();
     $("#results").hide();
     $("#quiz").show();
-    $(".jumbotron").show();
+    $(".jumbotron").slideDown("slow");
     $("html,body").animate({ scrollTop: 0 }, 0);
   });
 });
