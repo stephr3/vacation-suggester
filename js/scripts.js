@@ -97,6 +97,8 @@ $(document).ready(function(){
       $("html,body").animate({ scrollTop: 0 }, 0);
     }else {
       alert("Please enter your name");
+      $("#warning").addClass("has-error");
+      $("#warning .control-label").append("Please enter your name.");
     }
   });
 
