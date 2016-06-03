@@ -1,36 +1,23 @@
-.jumbotron {
-  height: 60vh;
-  background-image: url(../img/vacation-dog.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #00C3FF;
-  }
-
-  h3 {
-    font-style: italic;
-  }
-
-  #results {
-    max-width: 80vw;
-  }
-  #results img {
-    max-width: 60vw;
-    display: block;
-    margin: 6vh auto 4vh auto;
-    border: solid 3px black;
-  }
-
-  #results h1 {
-    text-align: center;
-  }
-
-p {
-  font-size: 1.4em;
+/*General styles*/
+body {
+  margin-bottom: 10vh;
 }
+
+button {
+  margin: 3vh 2vh 3vh auto;
+}
+
+h3 {
+  font-style: italic;
+}
+
 label {
   font-size: 1.3em;
   padding-bottom: 2vh;
+}
+
+p {
+  font-size: 1.4em;
 }
 
 select {
@@ -38,21 +25,39 @@ select {
   min-width: 200px;
 }
 
-button {
-  margin-top: 3vh;
-}
-
-body {
-  margin-bottom: 10vh;
-}
 .container {
   max-width: 85vw;
 }
+
+/*Header image*/
+.jumbotron {
+  height: 60vh;
+  background-color: #00C3FF;
+  background-image: url(../img/vacation-dog.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/*Quiz*/
 .lead {
   font-style: italic;
   margin: 3vh auto 4vh auto;
 }
 
+/*Results*/
 #results {
-  display: none;
+  display:none;
+  max-width: 80vw;
+}
+
+#results h1 {
+  text-align: center;
+}
+
+#results img {
+  border: solid 3px black;
+  display: block;
+  margin: 6vh auto 4vh auto;
+  max-width: 60vw;
 }
