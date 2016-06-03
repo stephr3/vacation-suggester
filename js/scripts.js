@@ -17,6 +17,7 @@ $(document).ready(function(){
   $("#quiz").submit(function(event){
     event.preventDefault();
     // Set variables
+    var userName = $("#userName").val();
     var question1 = $("#question1").val();
     var question2 = $("#question2").val();
     var question3 = $("#question3").val();
@@ -75,6 +76,7 @@ $(document).ready(function(){
     calcResult(staycation, seattle, sanFrancisco);
 
     //Show result
+    $(".userName").text(userName);
     if (result === "tally1"){
       $(".destinationName").text("have a staycation in Portland");
       $("#seattle, #sanFrancisco").hide();
