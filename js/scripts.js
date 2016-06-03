@@ -28,72 +28,76 @@ $(document).ready(function(){
     var staycation = 0;
     var seattle = 0;
     var sanFrancisco = 0;
-
+    //Validate name entered
+    if (userName){
     // Add to tally
-    if(question1 === "car"){
-      staycation += 1;
-      seattle += 2;
-    } else if (question1 === "fly"){
-      sanFrancisco += 5;
-    }
+      if(question1 === "car"){
+        staycation += 1;
+        seattle += 2;
+      } else if (question1 === "fly"){
+        sanFrancisco += 5;
+      }
 
-    if(question2 === "budget"){
-      staycation += 5;
-      seattle += 2;
-    } else if (question2 === "money"){
-      sanFrancisco += 5;
-    }
+      if(question2 === "budget"){
+        staycation += 5;
+        seattle += 2;
+      } else if (question2 === "money"){
+        sanFrancisco += 5;
+      }
 
-    if(question3 === "ownBed"){
-      staycation += 5;
-    } else if (question3 === "hotel"){
-      sanFrancisco += 2;
-      seattle += 1;
-    }
+      if(question3 === "ownBed"){
+        staycation += 5;
+      } else if (question3 === "hotel"){
+        sanFrancisco += 2;
+        seattle += 1;
+      }
 
-    if(question4 === "river"){
-      staycation += 5;
-    } else if (question4 === "sea"){
-      sanFrancisco += 2;
-      seattle += 1;
-    }
+      if(question4 === "river"){
+        staycation += 5;
+      } else if (question4 === "sea"){
+        sanFrancisco += 2;
+        seattle += 1;
+      }
 
-    if(question5 === "spaceNeedle"){
-      seattle += 5;
-    } else if (question5 === "bridges"){
-      sanFrancisco += 3;
-      staycation += 2;
-    }
+      if(question5 === "spaceNeedle"){
+        seattle += 5;
+      } else if (question5 === "bridges"){
+        sanFrancisco += 3;
+        staycation += 2;
+      }
 
-    if(question6 === "starbucks"){
-      seattle += 5;
-    } else if (question6 === "otherCoffee"){
-      sanFrancisco += 2;
-      staycation += 1;
-    }
+      if(question6 === "starbucks"){
+        seattle += 5;
+      } else if (question6 === "otherCoffee"){
+        sanFrancisco += 2;
+        staycation += 1;
+      }
 
-    //Calculate result
-    calcResult(staycation, seattle, sanFrancisco);
+      //Calculate result
+      calcResult(staycation, seattle, sanFrancisco);
 
-    //Show result
-    $(".userName").text(userName);
-    if (result === "tally1"){
-      $(".destinationName").text("have a staycation in Portland");
-      $("#seattle, #sanFrancisco").hide();
-      $("#staycation").show();
-    } else if (result === "tally2") {
-      $(".destinationName").text("Seattle");
-      $("#staycation, #sanFrancisco").hide();
-      $("#seattle").show();
-    } else {
-      $(".destinationName").text("San Francisco");
-      $("#seattle, #staycation").hide();
-      $("#sanFrancisco").show();
+      //Show result
+      $(".userName").text(userName);
+      if (result === "tally1"){
+        $(".destinationName").text("have a staycation in Portland");
+        $("#seattle, #sanFrancisco").hide();
+        $("#staycation").show();
+      } else if (result === "tally2") {
+        $(".destinationName").text("Seattle");
+        $("#staycation, #sanFrancisco").hide();
+        $("#seattle").show();
+      } else {
+        $(".destinationName").text("San Francisco");
+        $("#seattle, #staycation").hide();
+        $("#sanFrancisco").show();
+      }
+      $(".jumbotron").hide();
+      $("#quiz").hide();
+      $("#results").fadeIn("slow");
+      $("html,body").animate({ scrollTop: 0 }, 0);
+    }else {
+      alert("Please enter your name");
     }
-    $(".jumbotron").hide();
-    $("#quiz").hide();
-    $("#results").fadeIn("slow");
-    $("html,body").animate({ scrollTop: 0 }, 0);
   });
 
   //Results button functionality
