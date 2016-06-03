@@ -27,7 +27,6 @@ $(document).ready(function(){
     var staycation = 0;
     var seattle = 0;
     var sanFrancisco = 0;
-    var destination;
 
     // Add to tally
     if(question1 === "car"){
