@@ -9,7 +9,6 @@ var calcResult = function (tally1, tally2, tally3){
   } else {
     result = "tally3";
   }
-  alert(result);//for debugging
 };
 
 // User-interface logic
@@ -76,6 +75,7 @@ $(document).ready(function(){
     //Calculate result
     calcResult(staycation, seattle, sanFrancisco);
 
+    //Show result
     if (result === "tally1"){
       $(".destinationName").text("have a staycation in Portland");
       $("#seattle, #sanFrancisco").hide();
@@ -92,11 +92,9 @@ $(document).ready(function(){
 
     $("#quiz").hide();
     $("#results").show();
-
-    alert(["staycation: " + staycation, "seattle: " + seattle, "sanFrancisco: " + sanFrancisco, "q1:" + question1, "q2:"+question2, "q3:"+question3, "q4:"+question4, "q5:" +question5, "q6:"+question6]); //for debugging
   });
 
-  //Results button functionalit
+  //Results button functionality
   $("#results button").click(function(event){
     event.preventDefault();
     $("#quiz").removeAttr("checked");
