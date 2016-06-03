@@ -11,9 +11,13 @@ h3 {
   font-style: italic;
 }
 
+input {
+  min-width: 200px;
+}
+
 label {
   font-size: 1.3em;
-  padding-bottom: 2vh;
+  margin: auto 2vw 2vh auto;
 }
 
 p {
