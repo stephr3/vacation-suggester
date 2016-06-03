@@ -30,6 +30,10 @@ $(document).ready(function(){
     var sanFrancisco = 0;
     //Validate name entered
     if (userName){
+    //Remove error message if username has been entered
+      $("#warning").removeClass("has-error");
+      $("#warning .control-label").hide();
+
     // Add to tally
       if(question1 === "car"){
         staycation += 1;
@@ -96,9 +100,8 @@ $(document).ready(function(){
       $("#results").fadeIn("slow");
       $("html,body").animate({ scrollTop: 0 }, 0);
     }else {
-      alert("Please enter your name");
       $("#warning").addClass("has-error");
-      $("#warning .control-label").append("Please enter your name.");
+      $("#warning .control-label").show();
     }
   });
 

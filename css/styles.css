@@ -46,9 +46,10 @@ select {
 
 /*Quiz*/
 .control-label {
-  padding-top: 1vw;
-  font-weight: normal;
+  display:none;
   font-size: 1.2em;
+  font-weight: normal;
+  margin: 1vw auto 0 auto;
 }
 
 .lead {
