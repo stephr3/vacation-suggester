@@ -7,6 +7,23 @@
   background-color: #00C3FF;
   }
 
+label {
+  font-size: 1.3em;
+  padding-bottom: 2vh;
+}
+
+select {
+  max-width: 50vw;
+  min-width: 200px;
+}
+
+button {
+  margin-top: 3vh;
+}
+
+body {
+  margin-bottom: 10vh;
+}
 .container {
   max-width: 85vw;
 }
