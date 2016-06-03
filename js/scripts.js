@@ -1,6 +1,22 @@
+//Business logic
+var result;
+
+var calcResult = function (tally1, tally2, tally3){
+  if(tally1 >= tally2 && tally1 >= tally3){
+    result = "tally1";
+  } else if (tally2 >= tally1 && tally2 >= tally3){
+    result = "tally2";
+  } else {
+    result = "tally3";
+  }
+  alert(result);//for debugging
+};
+
+// User-interface logic
 $(document).ready(function(){
   $("#quiz").submit(function(event){
     event.preventDefault();
+    // Set variables
     var question1 = $("#question1").val();
     var question2 = $("#question2").val();
     var question3 = $("#question3").val();
@@ -11,8 +27,9 @@ $(document).ready(function(){
     var staycation = 0;
     var seattle = 0;
     var sanFrancisco = 0;
-    var result;
+    var destination;
 
+    // Add to tally
     if(question1 === "car"){
       staycation += 1;
       seattle += 2;
@@ -55,7 +72,9 @@ $(document).ready(function(){
       staycation += 1;
     }
 
+    //Calculate result
+    calcResult(staycation, seattle, sanFrancisco);
 
-    alert(["staycation: " + staycation, "seattle: " + seattle, "sanFrancisco: " + sanFrancisco, "q1:" + question1, "q2:"+question2, "q3:"+question3, "q4:"+question4, "q5:" +question5, "q6:"+question6]);
+    alert(["staycation: " + staycation, "seattle: " + seattle, "sanFrancisco: " + sanFrancisco, "q1:" + question1, "q2:"+question2, "q3:"+question3, "q4:"+question4, "q5:" +question5, "q6:"+question6]); //for debugging
   });
 });
