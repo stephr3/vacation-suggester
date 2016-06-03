@@ -76,11 +76,11 @@ $(document).ready(function(){
     calcResult(staycation, seattle, sanFrancisco);
 
     if (result === "tally1"){
-      alert("You should have a staycation in Portland!");
+      $(".destinationName").text("have a staycation in Portland");
     } else if (result === "tally2") {
-      alert("You should visit Seattle!");
+      $(".destinationName").text("Seattle");
     } else {
-      alert("You should visit San Francisco!");
+      $(".destinationName").text("San Francisco");
     }
 
 
