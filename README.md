@@ -8,7 +8,7 @@ _This is a fun interactive quiz which will help Portlanders decide where to go o
 ## Setup Requirements
 * _Clone repository onto your computer._
 * _Open .html file in your browser of choice._
-* _You can also check out the page here: <http://stephr3.github.io/vacation-suggester>
+* You can also check out the page here: <http://stephr3.github.io/vacation-suggester>
 
 ## Support and Contact Details
 _Feel free to contact me through my GitHub account._
